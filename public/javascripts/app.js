@@ -1,5 +1,5 @@
 (function() {
-	var socket = new io.Socket("localhost", {"port": 3001, rememberTransport:false});
+	var socket = new io.Socket('localhost', {'port': 5454, rememberTransport:false});
 
 	socket.on('connect', function() {
 		socket.sent({event: 'initial'});
